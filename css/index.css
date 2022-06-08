@@ -40,15 +40,47 @@ img {
     text-decoration: none;
 }
 
+/* css del index.html con grid */
 
+.body__index{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 950px 700px 15px;
+    width: 100%;
+}
 
-/* css del index.html */
+.header__index{
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: #7F7A6C;
+    padding: 0px 6.4vw;
+}
 
 #boxfoto {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* inicio css del grid*/
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+    grid-column: 1;
+    grid-row:2;
+    /* fin css del grid*/
 }
 
 .boxfoto__form {
@@ -59,6 +91,7 @@ img {
     box-sizing: content-box;
     align-items: center;
     padding: 6px 30px 6px 30px;
+    gap:10px;
 }
 
 .form__input {
@@ -68,7 +101,6 @@ img {
     border: none;
     padding: 8px 8px 8px 0px;
     font-weight: 300;
-    margin: 0 20px 0 0;
     background: none;
     border-bottom: 2px solid;
 }
@@ -86,12 +118,29 @@ img {
     padding: 4px 2vw 4px 2vw;
 }
 
+.boxreseña__huesped {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+.boxreseña__nosotros {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
 #boxreseña {
     background-color: white;
     margin: 5vw 100px;
     display: flex;
     justify-content: center;
     gap: 2vw;
+    /* inicio css del grid*/
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+    grid-column: 1;
+    grid-row:3;
+    /* fin css del grid*/
 }
 
 .huesped__box {
@@ -178,8 +227,29 @@ img {
     padding: 20px 0px 20px 0px;
 }
 
-/* secciones de intro para todas las páginas*/
+.footer__texto a {
+    text-decoration: none;
+    color: white;
+}
 
+/*footer para el index.html con el grid */
+
+.footer__index {
+    background-color: #333333;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px 20vw 20px 20vw;
+    /* inicio css del grid*/
+    background-size: 100%;
+    grid-column: 1;
+    grid-row:4;
+    /* fin css del grid*/
+}
+
+/* secciones de intro para todas las páginas*/
 
 .intro {
     padding: 5vw 10vw 5vw 20vw;
@@ -215,6 +285,7 @@ img {
     background-attachment: fixed;
     background-position: center; 
     background-size: 100%;
+    height: 100%;
     opacity: 0.9;
 }
 
@@ -253,7 +324,6 @@ img {
     margin-bottom: 50px;
 }
 
-
 /* css de la página GALERÍA*/
 
 .galeria__grilla{
@@ -277,16 +347,90 @@ img {
     "i15 i16 i17 i18"
     "i15 i19 i17 i20"; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
     grid-gap: 6px;
 }
 
-.galeria__box1:hover{
-    transform: scale(1.2);
-    transition: ;
-    
+.galeria__grilla:hover{
+    transition: 2s;
 }
 
+.galeria__box1:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box2:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box3:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box4:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box5:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box6:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box7:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box8:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box9:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box10:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box11:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box12:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box14:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box15:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box16:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box17:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box18:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box19:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.galeria__box20:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
 
 .galeria__box1{
     background-image: url(../img/galeria/1.JPG);
@@ -462,7 +606,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    space
 }
 
 .servicios__item {
@@ -474,7 +617,7 @@ img {
 
 .item__titulo {
     color: #7f7a6c;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'EB Garamond', serif;
     letter-spacing: -0.03em;
     font-weight: 400;
@@ -545,7 +688,7 @@ img {
     margin-bottom: 5px;
 }
 
-.ubicacion {
+.uyc__img__ubicacion {
     width: 500px;
 }
 
@@ -561,7 +704,47 @@ img {
         text-align: center;
     }
 
-    /*cabañas*/ 
+    /*css del index para el grid*/
+
+    .body__index{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 650px 1600px 15px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .header__index {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer__index { 
+        padding: 15px 15vw;
+    }
+
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #boxfoto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #intro__cabañas {
+        background-attachment: local;
+    }
+
+    #intro__servicios {
+        background-attachment: local;
+    }
+
+    /* css de la página cabañas*/ 
 
     #intro_cabañas {
         padding: 0vw 0vw;
@@ -571,6 +754,228 @@ img {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+    .galeria__grilla {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-gap: 6px; 
+        margin-bottom: 10px; 
+    }
+        
+    .galeria__box1 {
+        background-image: url(../img/galeria/1.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .galeria__box2 {
+        background-image: url(../img/galeria/2.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+
+    .galeria__box3 {
+        background-image: url(../img/galeria/3.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .galeria__box4 {
+        background-image: url(../img/galeria/4.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 3/5;
+    }
+
+    .galeria__box5 {
+        background-image: url(../img/galeria/5.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .galeria__box6 {
+        background-image: url(../img/galeria/6.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .galeria__box7 {
+        background-image: url(../img/galeria/7.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .galeria__box8 {
+        background-image: url(../img/galeria/8.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 5/7;
+    }
+    .galeria__box9 {
+        background-image: url(../img/galeria/9.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .galeria__box10 {
+        background-image: url(../img/galeria/10.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .galeria__box11 {
+        background-image: url(../img/galeria/11.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 7;
+    }
+    .galeria__box12 {
+        background-image: url(../img/galeria/12.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 8/10 ;
+    }
+    .galeria__box13 {
+        background-image: url(../img/galeria/13.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 8;
+    }
+    .galeria__box14 {
+        background-image: url(../img/galeria/14.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 9;
+    }
+    .galeria__box15 {
+        background-image: url(../img/galeria/15.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 10/12;
+    }
+    .galeria__box16 {
+        background-image: url(../img/galeria/16.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 10;
+    }
+    .galeria__box17 {
+        background-image: url(../img/galeria/17.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 11/13;
+
+    }
+    .galeria__box18 {
+        background-image: url(../img/galeria/18.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 12;
+    }
+    .galeria__box19 {
+        background-image: url(../img/galeria/19.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 13;
+    }
+    .galeria__box20 {
+        background-image: url(../img/galeria/20.JPG);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        grid-column: 2;
+        grid-row: 13;
+    }
+
+    /* css de página servicios */
+
+    .servicios__cuerpo {
+        font-size: 16px;
+        color: #7f7a6c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+    .servicios__item {
+        margin: auto;
+        width: 100%;
+    }
+
+    .item__titulo {
+        font-size: 24px;
+    }
+
+    .item__descripcion {
+        font-size: 14px;
+    }
+
+    /* css de la página UBICACIÓN Y CONTACTO*/
+
+    #ubicacionycontacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10vh 6.4vw 10vh 6.4vw;
+        gap: 20px;
+    }
+
+    .uyc__box__ubicacion {
+        width: 500px;
+    }
+
+    .uyc__box__contacto {
+        width: 500px;
+    }
+
+    .uyc__img__ubicacion {
+        width: 450px;
     }
 
 }
@@ -588,12 +993,58 @@ img {
         font-size: 14px;
     }
 
+    /*css del index para el grid*/
+
+    .body__index{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 265px 600px 1400px 30px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .header__index {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 0px 10px 0px;
+        margin: auto;
+    }
+
+    .footer__index { 
+        padding: 15px 15vw;
+    }
+
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #boxfoto {
+        display:flex;
+        flex-direction:column;  
+    }
+
+    .boxfoto__form {
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        gap: 3px;
+    }
+
+    .form__input {
+        width: 150px;
+    }
+
+    /*css de la galería */
+
     .galeria__grilla {
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
         grid-gap: 6px;
-        
+        margin-bottom: 10px; 
     }
         
     .galeria__box1 {
@@ -764,6 +1215,53 @@ img {
         grid-row: 26;
     }
 
+    /* css de página servicios */
 
+    .servicios__cuerpo {
+        font-size: 16px;
+        color: #7f7a6c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
 
-}
+    .servicios__item {
+        margin: auto;
+        width: 100%;
+    }
+
+    .item__titulo {
+        font-size: 22px;
+    }
+
+    .item__descripcion {
+        font-size: 12px;
+    }
+
+    /* css de la página UBICACIÓN Y CONTACTO*/
+
+    #ubicacionycontacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10vh 6.4vw 10vh 6.4vw;
+        gap: 20px;
+    }
+
+    .uyc__box__ubicacion {
+        width: 300px;
+    }
+
+    .uyc__box__contacto {
+        width: 300px;
+    }
+
+    .uyc__img__ubicacion {
+        width: 250px;
+    }
+
+    }
+
+    
