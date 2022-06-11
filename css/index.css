@@ -12,6 +12,11 @@ img {
     width: 100%;
 }
 
+/* agrego margin 0 a figure para pisar el margin de bootstrap */
+figure {
+    margin: 0 0 0;
+}
+
 /* css del main menu común a todas las páginas */
 
 .header {
@@ -182,10 +187,6 @@ img {
 
 /* secciones de intro para todas las páginas*/
 
-.intro {
-    padding: 5vw 10vw 5vw 20vw;
-} 
-
 .intro__titulo {
     font-weight: 400;
     letter-spacing: +0.08em;
@@ -222,7 +223,6 @@ img {
 
 /* css de la página CABAÑAS*/
 
-
 .cabaña {
     display: flex;
     justify-content: center;
@@ -256,7 +256,7 @@ img {
     color: #757575;
     margin-bottom: 50px;
 }
-*/
+
 
 /* css de la página GALERÍA*/
 
@@ -268,25 +268,9 @@ img {
     margin: auto;
     display: grid;
     justify-content: center;
-    /* opción de template area (no queda como definitiva por el momento):
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr); */
-    /* grid-template-areas:
-    "i1 i2 i3 i4"
-    "i5 i2 i6 i4"
-    "i7 i7 i8 i9"
-    "i7 i7 i8 i10"
-    "i11 i12 i13 i13"
-    "i14 i12 i13 i13"
-    "i15 i16 i17 i18"
-    "i15 i19 i17 i20"; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-    grid-gap: 6px;
-}
-
-.galeria__grilla:hover{
-    transition: 2s;
+    grid-gap: 5px;
 }
 
 .galeria__box1:hover{
@@ -385,7 +369,7 @@ img {
 }
 
 .galeria__box3 {
-    background-image: url(../img/galeria/3.JPG);
+    background-image: url(../img/galeria/3.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -394,7 +378,7 @@ img {
 }
 
 .galeria__box4 {
-    background-image: url(../img/galeria/4.JPG);
+    background-image: url(../img/galeria/4.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -412,7 +396,7 @@ img {
 }
 
 .galeria__box6 {
-    background-image: url(../img/galeria/6.JPG);
+    background-image: url(../img/galeria/6.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -421,7 +405,7 @@ img {
 }
 
 .galeria__box7 {
-    background-image: url(../img/galeria/7.JPG);
+    background-image: url(../img/galeria/7.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -429,7 +413,7 @@ img {
     grid-row: 3/5;
 }
 .galeria__box8 {
-    background-image: url(../img/galeria/8.JPG);
+    background-image: url(../img/galeria/8.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -453,7 +437,7 @@ img {
     grid-row: 4;
 }
 .galeria__box11 {
-    background-image: url(../img/galeria/11.JPG);
+    background-image: url(../img/galeria/11.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -461,7 +445,7 @@ img {
     grid-row: 5;
 }
 .galeria__box12 {
-    background-image: url(../img/galeria/12.JPG);
+    background-image: url(../img/galeria/12.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -469,7 +453,7 @@ img {
     grid-row: 5/7;
 }
 .galeria__box13 {
-    background-image: url(../img/galeria/13.JPG);
+    background-image: url(../img/galeria/13.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -477,7 +461,7 @@ img {
     grid-row: 5/7;
 }
 .galeria__box14 {
-    background-image: url(../img/galeria/14.JPG);
+    background-image: url(../img/galeria/14.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -485,7 +469,7 @@ img {
     grid-row: 6;
 }
 .galeria__box15 {
-    background-image: url(../img/galeria/15.JPG);
+    background-image: url(../img/galeria/15.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -509,7 +493,7 @@ img {
     grid-row: 7/9;
 }
 .galeria__box18 {
-    background-image: url(../img/galeria/18.JPG);
+    background-image: url(../img/galeria/18.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 100%;
@@ -719,7 +703,7 @@ img {
     }
 
     .galeria__box3 {
-        background-image: url(../img/galeria/3.JPG);
+        background-image: url(../img/galeria/3.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -728,7 +712,7 @@ img {
     }
 
     .galeria__box4 {
-        background-image: url(../img/galeria/4.JPG);
+        background-image: url(../img/galeria/4.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -746,7 +730,7 @@ img {
     }
 
     .galeria__box6 {
-        background-image: url(../img/galeria/6.JPG);
+        background-image: url(../img/galeria/6.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -755,7 +739,7 @@ img {
     }
 
     .galeria__box7 {
-        background-image: url(../img/galeria/7.JPG);
+        background-image: url(../img/galeria/7.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -763,7 +747,7 @@ img {
         grid-row: 5;
     }
     .galeria__box8 {
-        background-image: url(../img/galeria/8.JPG);
+        background-image: url(../img/galeria/8.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -787,7 +771,7 @@ img {
         grid-row: 7;
     }
     .galeria__box11 {
-        background-image: url(../img/galeria/11.JPG);
+        background-image: url(../img/galeria/11.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -795,7 +779,7 @@ img {
         grid-row: 7;
     }
     .galeria__box12 {
-        background-image: url(../img/galeria/12.JPG);
+        background-image: url(../img/galeria/12.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -803,7 +787,7 @@ img {
         grid-row: 8/10 ;
     }
     .galeria__box13 {
-        background-image: url(../img/galeria/13.JPG);
+        background-image: url(../img/galeria/13.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -811,7 +795,7 @@ img {
         grid-row: 8;
     }
     .galeria__box14 {
-        background-image: url(../img/galeria/14.JPG);
+        background-image: url(../img/galeria/14.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -819,7 +803,7 @@ img {
         grid-row: 9;
     }
     .galeria__box15 {
-        background-image: url(../img/galeria/15.JPG);
+        background-image: url(../img/galeria/15.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -844,7 +828,7 @@ img {
 
     }
     .galeria__box18 {
-        background-image: url(../img/galeria/18.JPG);
+        background-image: url(../img/galeria/18.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1003,7 +987,7 @@ img {
     }
 
     .galeria__box3 {
-        background-image: url(../img/galeria/3.JPG);
+        background-image: url(../img/galeria/3.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1012,7 +996,7 @@ img {
     }
 
     .galeria__box4 {
-        background-image: url(../img/galeria/4.JPG);
+        background-image: url(../img/galeria/4.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1030,7 +1014,7 @@ img {
     }
 
     .galeria__box6 {
-        background-image: url(../img/galeria/6.JPG);
+        background-image: url(../img/galeria/6.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1039,7 +1023,7 @@ img {
     }
 
     .galeria__box7 {
-        background-image: url(../img/galeria/7.JPG);
+        background-image: url(../img/galeria/7.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1047,7 +1031,7 @@ img {
         grid-row: 9;
     }
     .galeria__box8 {
-        background-image: url(../img/galeria/8.JPG);
+        background-image: url(../img/galeria/8.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1071,7 +1055,7 @@ img {
         grid-row: 13;
     }
     .galeria__box11 {
-        background-image: url(../img/galeria/11.JPG);
+        background-image: url(../img/galeria/11.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1079,7 +1063,7 @@ img {
         grid-row: 14;
     }
     .galeria__box12 {
-        background-image: url(../img/galeria/12.JPG);
+        background-image: url(../img/galeria/12.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1087,7 +1071,7 @@ img {
         grid-row: 15/17 ;
     }
     .galeria__box13 {
-        background-image: url(../img/galeria/13.JPG);
+        background-image: url(../img/galeria/13.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1095,7 +1079,7 @@ img {
         grid-row: 17;
     }
     .galeria__box14 {
-        background-image: url(../img/galeria/14.JPG);
+        background-image: url(../img/galeria/14.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1103,7 +1087,7 @@ img {
         grid-row: 18;
     }
     .galeria__box15 {
-        background-image: url(../img/galeria/15.JPG);
+        background-image: url(../img/galeria/15.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
@@ -1128,7 +1112,7 @@ img {
 
     }
     .galeria__box18 {
-        background-image: url(../img/galeria/18.JPG);
+        background-image: url(../img/galeria/18.jpg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 100%;
