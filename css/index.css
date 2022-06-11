@@ -40,47 +40,12 @@ img {
     text-decoration: none;
 }
 
-/* css del index.html con grid */
-
-.body__index{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 950px 700px 15px;
-    width: 100%;
-}
-
-.header__index{
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100%;
-    grid-column: 1;
-    grid-row: 1;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0.9;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid;
-    border-color: #7F7A6C;
-    padding: 0px 6.4vw;
-}
 
 #boxfoto {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* inicio css del grid*/
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100%;
-    grid-column: 1;
-    grid-row:2;
-    /* fin css del grid*/
 }
 
 .boxfoto__form {
@@ -118,29 +83,12 @@ img {
     padding: 4px 2vw 4px 2vw;
 }
 
-.boxreseña__huesped {
-    animation: bounce;
-    animation-duration: 2s;
-}
-
-.boxreseña__nosotros {
-    animation: bounce;
-    animation-duration: 2s;
-}
-
 #boxreseña {
     background-color: white;
     margin: 5vw 100px;
     display: flex;
     justify-content: center;
     gap: 2vw;
-    /* inicio css del grid*/
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: 100%;
-    grid-column: 1;
-    grid-row:3;
-    /* fin css del grid*/
 }
 
 .huesped__box {
@@ -232,23 +180,6 @@ img {
     color: white;
 }
 
-/*footer para el index.html con el grid */
-
-.footer__index {
-    background-color: #333333;
-    font-size: 14px;
-    color: white;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 20px 20vw 20px 20vw;
-    /* inicio css del grid*/
-    background-size: 100%;
-    grid-column: 1;
-    grid-row:4;
-    /* fin css del grid*/
-}
-
 /* secciones de intro para todas las páginas*/
 
 .intro {
@@ -291,20 +222,22 @@ img {
 
 /* css de la página CABAÑAS*/
 
-#cabaña {
+
+.cabaña {
     display: flex;
-    padding: 80px 6.4vw;
-    gap: 6vw;
+    justify-content: center;
+    padding: 80px 6.4vw 80px 6.4vw;
+    gap:3px;
 }
 
 .cabaña__cuerpo {
-    display: block;
-    margin: 0 auto; 
+    margin: 0 10px; 
+    padding: 0 10px;
 }
 
 .cabaña__img {
     border-radius: 2px;
-    margin-bottom: 50px;
+    margin: 15px 0 50px 0;;
 }
 
 .cabaña__titulo {
@@ -323,6 +256,7 @@ img {
     color: #757575;
     margin-bottom: 50px;
 }
+*/
 
 /* css de la página GALERÍA*/
 
@@ -744,17 +678,20 @@ img {
         background-attachment: local;
     }
 
-    /* css de la página cabañas*/ 
+    /* css de la página cabañas 
 
     #intro_cabañas {
         padding: 0vw 0vw;
     }
 
-    #cabaña {
+    .cabaña {
         display: flex;
         flex-direction: column;
         gap: 15px;
-    }
+    } */
+
+    /* css de la página galería*/
+
     .galeria__grilla {
         display:grid;
         grid-template-columns: 1fr 1fr;
