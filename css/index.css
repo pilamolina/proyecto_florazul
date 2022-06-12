@@ -45,6 +45,17 @@ figure {
     text-decoration: none;
 }
 
+/* agrego estilo a los botones para modificar el estilo de bootstrap*/
+
+.menu__lista {
+    border: none !important;
+}
+
+.menu__lista:hover{
+    background-color: #EDF5FD !important;
+}
+
+
 
 #boxfoto {
     background-color: white;
@@ -88,6 +99,7 @@ figure {
     padding: 4px 2vw 4px 2vw;
 }
 
+/* css de la página index sin bootstrap
 #boxreseña {
     background-color: white;
     margin: 5vw 100px;
@@ -95,6 +107,15 @@ figure {
     justify-content: center;
     gap: 2vw;
 }
+*/
+
+/*css de la pagina index con bootstrap*/
+
+#boxreseña {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 .huesped__box {
     border-right: 1.5px solid;
@@ -147,6 +168,7 @@ figure {
     padding-right: 30px;
     padding-top: 30px;
     color: #333333;
+    margin-top: 30px;
 }
 
 .nosotros__parrafo {
@@ -197,7 +219,7 @@ figure {
     text-align: center;
     color: #333333;
     background-color: #F7F4F3;
-    opacity: 0.8;
+    opacity: 0.8; 
 }
 
 #intro__cabañas {
@@ -221,7 +243,7 @@ figure {
     opacity: 0.9;
 }
 
-/* css de la página CABAÑAS*/
+/* css de la página CABAÑAS, comentado para aplicar bootstrap
 
 .cabaña {
     display: flex;
@@ -256,6 +278,31 @@ figure {
     color: #757575;
     margin-bottom: 50px;
 }
+*/
+
+
+/* css de la página cabañas para bootstrap */
+.card {
+    border:none !important;
+}
+
+.cabaña__cards {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px !important;
+}
+
+.cabaña__titulo {
+    font-style: italic !important;
+    font-family: 'EB Garamond', serif !important;
+    letter-spacing: +0.01em !important;
+    font-size: 25px !important;
+    font-weight: 100 !important;
+    color: #757575 !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 
 
 /* css de la página GALERÍA*/
@@ -277,6 +324,7 @@ figure {
     transform: scale(1.1);
     transition: 2s;
 }
+
 .galeria__box2:hover{
     transform: scale(1.1);
     transition: 2s;
@@ -643,17 +691,18 @@ figure {
         padding: 15px 15vw;
     }
 
-    #boxreseña {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
     #boxfoto {
         display: flex;
         flex-direction: column;
     }
 
+    /*css de la página index sin bootstrap 
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    */
     #intro__cabañas {
         background-attachment: local;
     }
@@ -662,7 +711,7 @@ figure {
         background-attachment: local;
     }
 
-    /* css de la página cabañas 
+    /* css de la página cabañas sin bootstrap
 
     #intro_cabañas {
         padding: 0vw 0vw;
@@ -936,12 +985,6 @@ figure {
         padding: 15px 15vw;
     }
 
-    #boxreseña {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
     #boxfoto {
         display:flex;
         flex-direction:column;  
@@ -957,6 +1000,14 @@ figure {
     .form__input {
         width: 150px;
     }
+
+    /*css de la página index sin bootstrap 
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    */
 
     /*css de la galería */
 
