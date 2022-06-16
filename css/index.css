@@ -55,13 +55,15 @@ figure {
     background-color: #EDF5FD !important;
 }
 
-
-
 #boxfoto {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.boxfoto__img {
+    height: 100vh;
 }
 
 .boxfoto__form {
@@ -119,7 +121,7 @@ figure {
 
 .huesped__box {
     border-right: 1.5px solid;
-    border-color: #333333;
+    border-color: #757575;
 }
 
 .huesped__titulo {
@@ -142,10 +144,10 @@ figure {
 }
 
 .huesped__parrafo2 {
-    font-size: 14px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 70px;
+    padding-top:20px;
+    padding-bottom: 60px;
     text-align: right;
 }
 
@@ -156,7 +158,7 @@ figure {
 
 .nosotros__box {
     border-left: 1.5px solid;
-    border-color: #333333; 
+    border-color: #757575; 
 }
 
 .nosotros__titulo {
@@ -177,14 +179,6 @@ figure {
     padding-left: 30px;
     padding-right: 40px;
     padding-bottom: 60px;
-}
-
-.nosotros__parrafo2 {
-    font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
-    font-style: italic;
 }
 
 .nosotros__img {
@@ -210,26 +204,24 @@ figure {
 /* secciones de intro para todas las páginas*/
 
 .intro__titulo {
-    font-weight: 400;
-    letter-spacing: +0.08em;
+    letter-spacing: +0.04em;
     font-size: 22px;
-    font-weight: 400;
     margin: 0vh 0vw 5vh 0vw;
     padding: 20vh 8vw; 
     text-align: center;
-    color: #333333;
     background-color: #F7F4F3;
     opacity: 0.8; 
 }
 
 #intro__cabañas {
     padding: 15vw 15vw;
-    background-image: url(../img/fotolago3.jpg);
+    background-image: url(../img/fotolago1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    height: 100vh;
     background-size: 100%;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 #intro__servicios {
@@ -239,8 +231,8 @@ figure {
     background-attachment: fixed;
     background-position: center; 
     background-size: 100%;
-    height: 100%;
-    opacity: 0.9;
+    height: 100vh;
+    opacity: 0.5;
 }
 
 /* css de la página CABAÑAS, comentado para aplicar bootstrap
@@ -287,9 +279,10 @@ figure {
 }
 
 .cabaña__cards {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     padding: 0px !important;
+    align-items: center;
 }
 
 .cabaña__titulo {
@@ -305,7 +298,7 @@ figure {
 
 
 
-/* css de la página GALERÍA*/
+/* css de la página galería*/
 
 .galeria__grilla{
     width: 100%;
@@ -320,80 +313,7 @@ figure {
     grid-gap: 5px;
 }
 
-.galeria__box1:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-
-.galeria__box2:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box3:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box4:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box5:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box6:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box7:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box8:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box9:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box10:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box11:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box12:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box14:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box15:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box16:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box17:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box18:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box19:hover{
-    transform: scale(1.1);
-    transition: 2s;
-}
-.galeria__box20:hover{
+.figure__box:hover{
     transform: scale(1.1);
     transition: 2s;
 }
@@ -594,7 +514,8 @@ figure {
     padding-bottom: 10px;
 }
 
-/* css de la página UBICACIÓN Y CONTACTO*/
+/* css de la página ubicación y contacto*/
+
 
 #ubicacionycontacto {
     display: flex;
@@ -641,17 +562,24 @@ figure {
 
 .form__nombre {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 12px;
 }
 
 .form__correo {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
 }
 
 .form__mensaje {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.form__enviar {
+    font-size: 14px;
 }
 
 .uyc__img__ubicacion {
@@ -703,12 +631,15 @@ figure {
         margin: auto;
     }
     */
+
     #intro__cabañas {
         background-attachment: local;
+        height: 50vh;
     }
 
     #intro__servicios {
         background-attachment: local;
+        height: 50vh;
     }
 
     /* css de la página cabañas sin bootstrap
@@ -927,6 +858,8 @@ figure {
 
     /* css de la página UBICACIÓN Y CONTACTO*/
 
+   /* css de la página UBICACIÓN Y CONTACTO sin bootstrap
+
     #ubicacionycontacto {
         display: flex;
         flex-wrap: wrap;
@@ -947,7 +880,8 @@ figure {
     .uyc__img__ubicacion {
         width: 450px;
     }
-
+    */
+    
 }
 
 @media screen and (max-width: 540px) {
@@ -1213,6 +1147,8 @@ figure {
 
     /* css de la página UBICACIÓN Y CONTACTO*/
 
+    /* css de la página UBICACIÓN Y CONTACTO sin bootstrap
+
     #ubicacionycontacto {
         display: flex;
         flex-wrap: wrap;
@@ -1221,6 +1157,7 @@ figure {
         margin: 10vh 6.4vw 10vh 6.4vw;
         gap: 20px;
     }
+    
 
     .uyc__box__ubicacion {
         width: 300px;
@@ -1233,6 +1170,7 @@ figure {
     .uyc__img__ubicacion {
         width: 250px;
     }
+    */
 
     }
 
