@@ -1,0 +1,51 @@
+/* css del main menu común a todas las páginas */
+
+.header {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: #7F7A6C;
+    padding: 0px 6.4vw;
+
+    .menu {
+        list-style: none;
+        display: flex;
+        gap:25px;
+
+        .menu__lista {
+            border: none !important;
+
+            a {
+                color: black;
+                font-size: 13px;
+                text-decoration: none;
+            }
+        }
+        .menu__lista:hover{
+            background-color: #EDF5FD !important;
+        }    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}

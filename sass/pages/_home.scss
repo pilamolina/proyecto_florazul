@@ -1,0 +1,172 @@
+
+
+#boxfoto {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .boxfoto__img {
+        height: 100vh;
+    }
+
+    .boxfoto__form {
+        display: flex;
+        justify-content: center;
+        background-color: #333333;
+        color: white;
+        box-sizing: content-box;
+        align-items: center;
+        padding: 6px 30px 6px 30px;
+        gap:10px;
+
+        .form__input {
+            color:grey;
+            font-size: 10px;
+            width: 120px;
+            border: none;
+            padding: 8px 8px 8px 0px;
+            font-weight: 300;
+            background: none;
+            border-bottom: 2px solid;
+        }
+        
+        .form__input--black {
+            color: #333333;
+        }
+        
+        .form__input--font {
+            font-size: 12px;
+            letter-spacing: 0.8px;
+        }
+        
+        .form__input--padding {
+            padding: 4px 2vw 4px 2vw;
+        }
+    }
+}
+
+#boxreseña {
+    background-color: white;
+    margin: 5vw 100px;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+
+    .huesped__box {
+        border-right: 1.5px solid;
+        border-color: #757575;
+        margin-top: 30px;
+
+        .huesped__titulo {
+            font-family: $title-font;
+            letter-spacing: $title-letter-spacing;
+            font-weight: $title-font-weight;
+            font-size: $title-font-size;
+            color: $title-color;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: right;
+            
+        }
+        .huesped__parrafo {
+            background-color: white;
+            font-size: 16px;
+            padding-left: 70px;
+            padding-right: 30px;
+            text-align: right;
+        }
+        .huesped__parrafo2 {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top:20px;
+            padding-bottom: 60px;
+            text-align: right;
+        }
+    }
+
+    .huesped__img {
+        opacity: 0.9;
+        padding-top: 15px;
+    }
+
+    .nosotros__img {
+        opacity: 0.9;
+    }
+
+    .nosotros__box {
+        border-left: 1.5px solid;
+        border-color: #757575; 
+
+        .nosotros__titulo {
+            font-family: $title-font;
+            letter-spacing: $title-letter-spacing;
+            font-weight: $title-font-weight;
+            font-size: $title-font-size;
+            color: $title-color;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+        .nosotros__parrafo {
+            background-color: white;
+            font-size: 16px;
+            padding-left: 30px;
+            padding-right: 40px;
+            padding-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #boxfoto {
+        display: flex;
+        flex-direction: column;
+
+        .boxfoto__img {
+            height: 450px;
+        }
+    }
+
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .intro__titulo {
+        font-size: 14px;
+    }
+
+    #boxfoto {
+        display:flex;
+        flex-direction:column; 
+
+        .boxfoto__form {
+            display: flex;
+            flex-direction: column;
+            width: 160px;
+
+            .form__input {
+                width: 150px;
+            }
+        }
+
+        .boxfoto__img {
+            height: 200px;
+        }
+    }
+
+    #boxreseña {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 5px;
+    }
+}

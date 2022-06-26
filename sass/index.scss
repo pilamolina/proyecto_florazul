@@ -1,0 +1,17 @@
+
+/*misc*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*partials*/
+@import './partials/header';
+@import './partials/intro';
+@import './partials/footer';
+
+/*pages*/
+@import './pages/home';
+@import './pages/cabañas';
+@import './pages/galeria';
+@import './pages/servicios';
+@import './pages/ubicacionycontacto';

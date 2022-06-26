@@ -1,0 +1,71 @@
+
+#ubicacionycontacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10vh 6.4vw 10vh 6.4vw;
+
+
+    .uyc__box__ubicacion {
+        display: block;
+        width: 500px;
+        text-align: left;
+        border-left: 2px solid;
+        border-color: #7F7A6C;
+        padding-left: 30px;
+    }
+
+    .uyc__box__contacto {
+        display: block;
+        width: 500px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .uyc__form {
+        display: block;
+    }
+
+    .uyc__titulo {
+        font-family: $title-font;
+        letter-spacing: $title-letter-spacing;
+        font-weight: $title-font-weight;
+        font-size: $title-font-size;
+        color: $title-color;
+        padding-bottom: 20px;
+    }
+    .uyc__subtitulo {
+        letter-spacing: $sub-title-letter-spacing;
+        font-weight: $sub-title-font-weight;
+        font-size: $sub-title-font-size;
+        color: $sub-title-color;
+        padding-bottom: 20px;
+    }
+
+    .form__nombre {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .form__correo {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .form__mensaje {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .form__enviar {
+        font-size: 12px;
+    }
+
+    .uyc__img__ubicacion {
+        width: 500px;
+    }
+}
+

@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href=".//css/index.css">
+    <link rel="stylesheet" href=".//css/translated.css">
 </head>
 <body class="body"> 
     <header class="header">
@@ -21,7 +22,7 @@
         <nav class="navegacion">
             <ul class="menu"> <!--agrego bootstrap en los botones-->
                 <li class="menu__lista btn btn-outline-secondary">
-                    <a href="" class="menu__lista--underlined"> INICIO </a>
+                    <a href="" class="menu__lista"> INICIO </a>
                 </li>
                 <li class="menu__lista btn btn-outline-secondary">
                     <a href="./views/cabañas.html"> CABAÑAS </a>
@@ -58,23 +59,21 @@
             <input type="submit" value="Ver disponibilidad" class="form__input--black form__input--font form__input--padding">
         </form>
     </section>
-    <section id="boxreseña" class="container">
-        <div class="row justify-content-center">    
-            <div class="item col-md-6" data-aos="fade-right" data-aos-duration="2000"> 
-                <div class="huesped__box">
-                    <h2 class="huesped__titulo">Nuestros huéspedes...</h2>
-                    <p class="huesped__parrafo">"Pasamos unos dias hermosos! La cabaña super comoda y acogedora. La ubicación al alcance de todo y frente al lago! Florencia muy atenta en todo momento. Gracias y hasta pronto"</p>
-                    <figcaption class="huesped__parrafo2 blockquote-footer">Alejandra de San Juan</figcaption>
-                </div>
-                <img class="huesped__img" src="./img/fotolago.jpg" alt="" width="500px">
+    <section id="boxreseña">
+        <div data-aos="fade-right" data-aos-duration="2000"> 
+            <div class="huesped__box">
+                <h2 class="huesped__titulo">Nuestros huéspedes...</h2>
+                <p class="huesped__parrafo">"Pasamos unos dias hermosos! La cabaña super comoda y acogedora. La ubicación al alcance de todo y frente al lago! Florencia muy atenta en todo momento. Gracias y hasta pronto"</p>
+                <figcaption class="huesped__parrafo2 blockquote-footer">Alejandra de San Juan</figcaption>
             </div>
-            <div class="item col-md-6" data-aos="fade-left" data-aos-duration="2000">
-                <img class="nosotros__img" src="./img/fotoafuera2.jpg" alt="" width="500px">
-                <div class="nosotros__box">
-                    <h2 class="nosotros__titulo">Sobre nosotros...</h2>
-                    <p class="nosotros__parrafo">Somos una familia que después de venir a Bariloche de vacaciones por más de 30 años sentimos que era el lugar donde siempre queríamos estar. Hoy disfrutamos de este emprendimiento turístico y de poder recibirlos en Flor Azul.</p>
-                </div> 
-            </div>
+            <img class="huesped__img" src="./img/fotolago.jpg" alt="" width="500px">
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000">
+            <img class="nosotros__img" src="./img/fotoafuera2.jpg" alt="" width="500px">
+            <div class="nosotros__box">
+                <h2 class="nosotros__titulo">Sobre nosotros...</h2>
+                <p class="nosotros__parrafo">Somos una familia que después de venir a Bariloche de vacaciones por más de 30 años sentimos que era el lugar donde siempre queríamos estar. Hoy disfrutamos de este emprendimiento turístico y de poder recibirlos en Flor Azul.</p>
+            </div> 
         </div>
     </section>
     <footer>
