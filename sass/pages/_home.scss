@@ -18,11 +18,11 @@
         box-sizing: content-box;
         align-items: center;
         padding: 6px 30px 6px 30px;
-        gap:10px;
+        gap:$ancho1;
 
         .form__input {
             color:grey;
-            font-size: 10px;
+            font-size: $ancho1*2;
             width: 120px;
             border: none;
             padding: 8px 8px 8px 0px;
@@ -48,7 +48,7 @@
 
 #boxreseña {
     background-color: white;
-    margin: 5vw 100px;
+    margin: 5vw $ancho1*10;
     display: flex;
     justify-content: center;
     gap: 5vw;
@@ -56,7 +56,7 @@
     .huesped__box {
         border-right: 1.5px solid;
         border-color: #757575;
-        margin-top: 30px;
+        margin-top: $ancho1*3;
 
         .huesped__titulo {
             font-family: $title-font;
@@ -64,23 +64,23 @@
             font-weight: $title-font-weight;
             font-size: $title-font-size;
             color: $title-color;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: $ancho1*3;
+            padding-right: $ancho1*3;
             text-align: right;
             
         }
         .huesped__parrafo {
             background-color: white;
             font-size: 16px;
-            padding-left: 70px;
-            padding-right: 30px;
+            padding-left: $ancho1*7;
+            padding-right: $ancho1*3;
             text-align: right;
         }
         .huesped__parrafo2 {
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top:20px;
-            padding-bottom: 60px;
+            padding-left: $ancho1*3;
+            padding-right: $ancho1*3;
+            padding-top:$ancho1*2;
+            padding-bottom: $ancho1*6;
             text-align: right;
         }
     }
@@ -104,17 +104,17 @@
             font-weight: $title-font-weight;
             font-size: $title-font-size;
             color: $title-color;
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 30px;
-            margin-top: 30px;
+            padding-left: $ancho1*3;
+            padding-right: $ancho1*3;
+            padding-top: $ancho1*3;
+            margin-top: $ancho1*3;
         }
         .nosotros__parrafo {
             background-color: white;
             font-size: 16px;
-            padding-left: 30px;
-            padding-right: 40px;
-            padding-bottom: 60px;
+            padding-left: $ancho1*3;
+            padding-right: $ancho1*4;
+            padding-bottom: $ancho1*6;
         }
     }
 }
@@ -151,15 +151,15 @@
         .boxfoto__form {
             display: flex;
             flex-direction: column;
-            width: 160px;
+            width: $ancho1*16;
 
             .form__input {
-                width: 150px;
+                width: $ancho1*15;
             }
         }
 
         .boxfoto__img {
-            height: 200px;
+            height: $ancho1*20;
         }
     }
 

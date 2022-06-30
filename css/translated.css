@@ -129,7 +129,7 @@ img {
     gap: 10px; }
     #boxfoto .boxfoto__form .form__input {
       color: grey;
-      font-size: 10px;
+      font-size: 20px;
       width: 120px;
       border: none;
       padding: 8px 8px 8px 0px;
@@ -260,7 +260,7 @@ font-style: italic !important;
 /*css de la galería */
 .galeria__grilla {
   width: 100%;
-  max-width: 1100px;
+  max-width: 20px;
   height: 100%;
   margin: 10vh 5vw 10vh 5vw;
   margin: auto;
@@ -268,8 +268,70 @@ font-style: italic !important;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-  grid-gap: 5px; }
-  .galeria__grilla .figure__box:hover {
+  grid-gap: 5px;
+  /*comentado para aplicar bucle
+    .figure__box:hover{
+        transform: scale(1.1);
+        transition: 2s;
+    } */ }
+  .galeria__grilla .galeria__box1 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box2 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box3 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box4 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box5 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box6 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box7 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box8 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box9 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box10 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box11 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box12 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box13 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box14 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box15 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box16 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box17 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box18 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box19 {
+    transform: scale(1.1);
+    transition: 2s; }
+  .galeria__grilla .galeria__box20 {
     transform: scale(1.1);
     transition: 2s; }
   .galeria__grilla .galeria__box1 {
@@ -729,7 +791,7 @@ font-style: italic !important;
       color: #7f7a6c;
       padding-bottom: 5px; }
     .servicios__cuerpo .servicios__item .item__descripcion {
-      padding-bottom: 10px; }
+      padding-bottom: 30px; }
 
 @media screen and (max-width: 800px) {
   .servicios__cuerpo {

@@ -3,14 +3,14 @@
 /* css de la página cabañas con bootstrap */
 
 .cabaña__cards{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: $ancho1*6;
+    margin-bottom: $ancho1*6;
     padding: 0px !important;
     align-items: center;
 
     .card {
         border:none !important;
-        padding-top: 30px;
+        padding-top: $ancho1*3;
 
         .cabaña__titulo {
             font-family: $title2-font !important;
@@ -18,8 +18,8 @@
             font-size: $title2-font-size !important;
             color: $title2-color !important;
             letter-spacing: +0.01em !important;
-            margin-bottom: 20px;
-            margin-top: 20px;
+            margin-bottom: $ancho1*2;
+            margin-top: $ancho1*2;
         }
     }
 }

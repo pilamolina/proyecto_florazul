@@ -12,14 +12,14 @@
         text-align: left;
         border-left: 2px solid;
         border-color: #7F7A6C;
-        padding-left: 30px;
+        padding-left: $ancho1*3;
     }
 
     .uyc__box__contacto {
         display: block;
         width: 500px;
         text-align: left;
-        padding-left: 30px;
+        padding-left: $ancho1*3;
     }
 
     .uyc__form {
@@ -32,14 +32,14 @@
         font-weight: $title-font-weight;
         font-size: $title-font-size;
         color: $title-color;
-        padding-bottom: 20px;
+        padding-bottom: $ancho1*2;
     }
     .uyc__subtitulo {
         letter-spacing: $sub-title-letter-spacing;
         font-weight: $sub-title-font-weight;
         font-size: $sub-title-font-size;
         color: $sub-title-color;
-        padding-bottom: 20px;
+        padding-bottom: $ancho1*2;
     }
 
     .form__nombre {
@@ -65,7 +65,7 @@
     }
 
     .uyc__img__ubicacion {
-        width: 500px;
+        width: $ancho1*50;
     }
 }
 
