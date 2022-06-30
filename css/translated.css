@@ -11,6 +11,10 @@ body {
 img {
   width: 100%; }
 
+/*
+figure {
+    margin: 0 0 0 !important;
+}*/
 /*partials*/
 /* css del main menu común a todas las páginas */
 .header {
@@ -112,10 +116,10 @@ img {
 
 /*pages*/
 #boxfoto {
-  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: white; }
   #boxfoto .boxfoto__img {
     height: 100vh; }
   #boxfoto .boxfoto__form {
@@ -129,7 +133,7 @@ img {
     gap: 10px; }
     #boxfoto .boxfoto__form .form__input {
       color: grey;
-      font-size: 20px;
+      font-size: 12px;
       width: 120px;
       border: none;
       padding: 8px 8px 8px 0px;
@@ -260,7 +264,7 @@ font-style: italic !important;
 /*css de la galería */
 .galeria__grilla {
   width: 100%;
-  max-width: 20px;
+  max-width: 1100px;
   height: 100%;
   margin: 10vh 5vw 10vh 5vw;
   margin: auto;
@@ -268,210 +272,92 @@ font-style: italic !important;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
-  grid-gap: 5px;
-  /*comentado para aplicar bucle
-    .figure__box:hover{
-        transform: scale(1.1);
-        transition: 2s;
-    } */ }
-  .galeria__grilla .galeria__box1 {
+  grid-gap: 5px; }
+  .galeria__grilla .figure__box:hover {
     transform: scale(1.1);
     transition: 2s; }
-  .galeria__grilla .galeria__box2 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box3 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box4 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box5 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box6 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box7 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box8 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box9 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box10 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box11 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box12 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box13 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box14 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box15 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box16 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box17 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box18 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box19 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box20 {
-    transform: scale(1.1);
-    transition: 2s; }
-  .galeria__grilla .galeria__box1 {
-    background-image: url(../img/galeria/1.JPG);
+  .galeria__grilla .background, .galeria__grilla .galeria__box1, .galeria__grilla .galeria__box2, .galeria__grilla .galeria__box3, .galeria__grilla .galeria__box4, .galeria__grilla .galeria__box5, .galeria__grilla .galeria__box6, .galeria__grilla .galeria__box7, .galeria__grilla .galeria__box8, .galeria__grilla .galeria__box9, .galeria__grilla .galeria__box10, .galeria__grilla .galeria__box11, .galeria__grilla .galeria__box12, .galeria__grilla .galeria__box13, .galeria__grilla .galeria__box14, .galeria__grilla .galeria__box15, .galeria__grilla .galeria__box16, .galeria__grilla .galeria__box17, .galeria__grilla .galeria__box18, .galeria__grilla .galeria__box19, .galeria__grilla .galeria__box20 {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 100%; }
+  .galeria__grilla .galeria__box1 {
+    background-image: url(../img/galeria/1.JPG);
     grid-column: 1;
     grid-row: 1; }
   .galeria__grilla .galeria__box2 {
     background-image: url(../img/galeria/2.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 2;
     grid-row: 1/3; }
   .galeria__grilla .galeria__box3 {
     background-image: url(../img/galeria/3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 3;
     grid-row: 1; }
   .galeria__grilla .galeria__box4 {
     background-image: url(../img/galeria/4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 4;
     grid-row: 1/3; }
   .galeria__grilla .galeria__box5 {
     background-image: url(../img/galeria/5.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 1;
     grid-row: 2; }
   .galeria__grilla .galeria__box6 {
     background-image: url(../img/galeria/6.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 3;
     grid-row: 2; }
   .galeria__grilla .galeria__box7 {
     background-image: url(../img/galeria/7.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 1/3;
     grid-row: 3/5; }
   .galeria__grilla .galeria__box8 {
     background-image: url(../img/galeria/8.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 3;
     grid-row: 3/5; }
   .galeria__grilla .galeria__box9 {
     background-image: url(../img/galeria/9.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 4;
     grid-row: 3; }
   .galeria__grilla .galeria__box10 {
     background-image: url(../img/galeria/10.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 4;
     grid-row: 4; }
   .galeria__grilla .galeria__box11 {
     background-image: url(../img/galeria/11.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 1;
     grid-row: 5; }
   .galeria__grilla .galeria__box12 {
     background-image: url(../img/galeria/12.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 2;
     grid-row: 5/7; }
   .galeria__grilla .galeria__box13 {
     background-image: url(../img/galeria/13.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 3/5;
     grid-row: 5/7; }
   .galeria__grilla .galeria__box14 {
     background-image: url(../img/galeria/14.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 1;
     grid-row: 6; }
   .galeria__grilla .galeria__box15 {
     background-image: url(../img/galeria/15.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 1;
     grid-row: 7/9; }
   .galeria__grilla .galeria__box16 {
     background-image: url(../img/galeria/16.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 2;
     grid-row: 7; }
   .galeria__grilla .galeria__box17 {
     background-image: url(../img/galeria/17.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 3;
     grid-row: 7/9; }
   .galeria__grilla .galeria__box18 {
     background-image: url(../img/galeria/18.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 4;
     grid-row: 7; }
   .galeria__grilla .galeria__box19 {
     background-image: url(../img/galeria/19.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 2;
     grid-row: 8; }
   .galeria__grilla .galeria__box20 {
     background-image: url(../img/galeria/20.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
     grid-column: 4;
     grid-row: 8; }
 

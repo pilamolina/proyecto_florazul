@@ -43,21 +43,21 @@
     }
 
     .form__nombre {
-        width: 100%;
-        margin-bottom: 8px;
-        font-size: 12px;
+        width: map-get($styleform,width);
+        margin-bottom: map-get($styleform,space);
+        font-size: map-get($styleform,size);
     }
 
     .form__correo {
-        width: 100%;
-        margin-bottom: 8px;
-        font-size: 12px;
+        width: map-get($styleform,width);
+        margin-bottom: map-get($styleform,space);
+        font-size: map-get($styleform,size);
     }
 
     .form__mensaje {
-        width: 100%;
-        margin-bottom: 8px;
-        font-size: 12px;
+        width: map-get($styleform,width);
+        margin-bottom: map-get($styleform,space);
+        font-size: map-get($styleform,size);
     }
 
     .form__enviar {

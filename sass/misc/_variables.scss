@@ -18,3 +18,15 @@ $title2-color: #7f7a6c;
 
 $ancho1: 10px;
 
+$styleform: (
+  width: 100%,
+  space: 8px,
+  size: 12px
+);
+
+@mixin flex-column{
+	display:flex;
+	flex-direction:column;
+}
+
+

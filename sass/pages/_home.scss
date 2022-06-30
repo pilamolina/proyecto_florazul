@@ -1,10 +1,9 @@
 
 
 #boxfoto {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
+    background-color: white;
 
     .boxfoto__img {
         height: 100vh;
@@ -22,7 +21,7 @@
 
         .form__input {
             color:grey;
-            font-size: $ancho1*2;
+            font-size: 12px;
             width: 120px;
             border: none;
             padding: 8px 8px 8px 0px;
@@ -122,8 +121,7 @@
 @media screen and (max-width: 800px) {
 
     #boxfoto {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
 
         .boxfoto__img {
             height: 450px;
@@ -131,8 +129,7 @@
     }
 
     #boxreseña {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin: auto;
         gap: 5px;
     }
@@ -145,12 +142,10 @@
     }
 
     #boxfoto {
-        display:flex;
-        flex-direction:column; 
+        @include flex-column;
 
         .boxfoto__form {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             width: $ancho1*16;
 
             .form__input {
@@ -164,8 +159,7 @@
     }
 
     #boxreseña {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         margin: auto;
         gap: 5px;
     }
