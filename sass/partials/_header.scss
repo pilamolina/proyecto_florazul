@@ -16,32 +16,44 @@
     .menu {
         list-style: none;
         display: flex;
-        gap:25px;
+        gap:35px;
 
         .menu__lista {
-            border: none !important;
+            :hover{
+                border-bottom: 0.5px solid;
+                border-color: #7F7A6C;
+            }
 
             a {
                 color: black;
                 font-size: 13px;
                 text-decoration: none;
+                padding: 4px 0px;
+              
             }
+        }  
+
+        .menu__lista--underlined {
+            border-bottom: 0.5px solid;
+            border-color: #7F7A6C;
         }
-        .menu__lista:hover{
-            background-color: #EDF5FD !important;
-        }    
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 815px) {
     .header {
         flex-direction: column;
         gap: 10px;
         padding-bottom: 10px;
+    
+        .menu {
+            gap:15px;
+        }
     }
+    
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
         align-items: center;

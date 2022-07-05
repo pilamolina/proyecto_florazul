@@ -16,18 +16,25 @@
         color: white;
         box-sizing: content-box;
         align-items: center;
-        padding: 6px 30px 6px 30px;
-        gap:$ancho1;
+        padding: 10px 30px 10px 30px;
+        gap:$ancho1*2;
+        
+        .form__fecha {
+            color:grey;
+            font-size: 12px; 
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
 
         .form__input {
             color:grey;
             font-size: 12px;
-            width: 120px;
+            width: 170px;
             border: none;
-            padding: 8px 8px 8px 0px;
+            padding: 0px 8px 0px 0px;
             font-weight: 300;
             background: none;
-            border-bottom: 2px solid;
+            border-bottom: 1px solid;
         }
         
         .form__input--black {
@@ -53,7 +60,7 @@
     gap: 5vw;
 
     .huesped__box {
-        border-right: 1.5px solid;
+        border-right: 0.5px solid;
         border-color: #757575;
         margin-top: $ancho1*3;
 
@@ -65,8 +72,8 @@
             color: $title-color;
             padding-left: $ancho1*3;
             padding-right: $ancho1*3;
+            margin-top: $ancho1*3;
             text-align: right;
-            
         }
         .huesped__parrafo {
             background-color: white;
@@ -94,7 +101,7 @@
     }
 
     .nosotros__box {
-        border-left: 1.5px solid;
+        border-left: 0.5px solid;
         border-color: #757575; 
 
         .nosotros__titulo {
@@ -118,14 +125,25 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 840px) {
 
     #boxfoto {
         @include flex-column;
 
-        .boxfoto__img {
-            height: 450px;
+        .boxfoto__form {
+            @include flex-column;
+            width: $ancho1*40;
+
+            .form__input {
+                width: $ancho1*35;
+            }
         }
+
+        .boxfoto__img {
+            height: 100%;
+        }
+
     }
 
     #boxreseña {
@@ -154,13 +172,38 @@
         }
 
         .boxfoto__img {
-            height: $ancho1*20;
+            height: 100%;
         }
+
     }
 
     #boxreseña {
         @include flex-column;
         margin: auto;
         gap: 5px;
+
+        .huesped__box {
+            .huesped__titulo {
+                font-size: $title-font-size*2/3;
+                padding-top: 20px;
+            }
+            .huesped__parrafo {
+                font-size: 14px;
+            }
+            .huesped__parrafo2 {
+                font-size: 12px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .nosotros__box {
+            .nosotros__titulo {
+                font-size: $title-font-size*2/3;
+                padding-top: 0px;
+            }
+            .nosotros__parrafo {
+                font-size: 12px;
+            }
+        }
     }
 }

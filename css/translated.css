@@ -11,10 +11,9 @@ body {
 img {
   width: 100%; }
 
-/*
 figure {
-    margin: 0 0 0 !important;
-}*/
+  margin: 0 0 0; }
+
 /*partials*/
 /* css del main menu común a todas las páginas */
 .header {
@@ -32,23 +31,28 @@ figure {
   .header .menu {
     list-style: none;
     display: flex;
-    gap: 25px; }
-    .header .menu .menu__lista {
-      border: none !important; }
-      .header .menu .menu__lista a {
-        color: black;
-        font-size: 13px;
-        text-decoration: none; }
-    .header .menu .menu__lista:hover {
-      background-color: #EDF5FD !important; }
+    gap: 35px; }
+    .header .menu .menu__lista :hover {
+      border-bottom: 0.5px solid;
+      border-color: #7F7A6C; }
+    .header .menu .menu__lista a {
+      color: black;
+      font-size: 13px;
+      text-decoration: none;
+      padding: 4px 0px; }
+    .header .menu .menu__lista--underlined {
+      border-bottom: 0.5px solid;
+      border-color: #7F7A6C; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 815px) {
   .header {
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+    .header .menu {
+      gap: 15px; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   .menu {
     flex-direction: column;
     align-items: center;
@@ -93,6 +97,18 @@ figure {
     background-attachment: local;
     height: 50vh; } }
 
+@media screen and (max-width: 500px) {
+  #intro__cabañas {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 35vh; }
+  #intro__servicios {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 35vh; } }
+
 /*footer para todas las paginas*/
 .footer {
   background-color: #333333;
@@ -129,17 +145,22 @@ figure {
     color: white;
     box-sizing: content-box;
     align-items: center;
-    padding: 6px 30px 6px 30px;
-    gap: 10px; }
+    padding: 10px 30px 10px 30px;
+    gap: 20px; }
+    #boxfoto .boxfoto__form .form__fecha {
+      color: grey;
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 0px; }
     #boxfoto .boxfoto__form .form__input {
       color: grey;
       font-size: 12px;
-      width: 120px;
+      width: 170px;
       border: none;
-      padding: 8px 8px 8px 0px;
+      padding: 0px 8px 0px 0px;
       font-weight: 300;
       background: none;
-      border-bottom: 2px solid; }
+      border-bottom: 1px solid; }
     #boxfoto .boxfoto__form .form__input--black {
       color: #333333; }
     #boxfoto .boxfoto__form .form__input--font {
@@ -155,7 +176,7 @@ figure {
   justify-content: center;
   gap: 5vw; }
   #boxreseña .huesped__box {
-    border-right: 1.5px solid;
+    border-right: 0.5px solid;
     border-color: #757575;
     margin-top: 30px; }
     #boxreseña .huesped__box .huesped__titulo {
@@ -166,6 +187,7 @@ figure {
       color: #333333;
       padding-left: 30px;
       padding-right: 30px;
+      margin-top: 30px;
       text-align: right; }
     #boxreseña .huesped__box .huesped__parrafo {
       background-color: white;
@@ -185,7 +207,7 @@ figure {
   #boxreseña .nosotros__img {
     opacity: 0.9; }
   #boxreseña .nosotros__box {
-    border-left: 1.5px solid;
+    border-left: 0.5px solid;
     border-color: #757575; }
     #boxreseña .nosotros__box .nosotros__titulo {
       font-family: "EB Garamond", serif;
@@ -204,12 +226,18 @@ figure {
       padding-right: 40px;
       padding-bottom: 60px; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   #boxfoto {
     display: flex;
     flex-direction: column; }
+    #boxfoto .boxfoto__form {
+      display: flex;
+      flex-direction: column;
+      width: 400px; }
+      #boxfoto .boxfoto__form .form__input {
+        width: 350px; }
     #boxfoto .boxfoto__img {
-      height: 450px; }
+      height: 100%; }
   #boxreseña {
     display: flex;
     flex-direction: column;
@@ -229,12 +257,25 @@ figure {
       #boxfoto .boxfoto__form .form__input {
         width: 150px; }
     #boxfoto .boxfoto__img {
-      height: 200px; }
+      height: 100%; }
   #boxreseña {
     display: flex;
     flex-direction: column;
     margin: auto;
-    gap: 5px; } }
+    gap: 5px; }
+    #boxreseña .huesped__box .huesped__titulo {
+      font-size: 30px;
+      padding-top: 20px; }
+    #boxreseña .huesped__box .huesped__parrafo {
+      font-size: 14px; }
+    #boxreseña .huesped__box .huesped__parrafo2 {
+      font-size: 12px;
+      padding-bottom: 20px; }
+    #boxreseña .nosotros__box .nosotros__titulo {
+      font-size: 30px;
+      padding-top: 0px; }
+    #boxreseña .nosotros__box .nosotros__parrafo {
+      font-size: 12px; } }
 
 /* css de la página cabañas con bootstrap */
 .cabaña__cards {
@@ -675,9 +716,10 @@ font-style: italic !important;
       font-weight: 400;
       font-size: 28px;
       color: #7f7a6c;
-      padding-bottom: 5px; }
+      padding-bottom: 5px;
+      padding-top: 10px; }
     .servicios__cuerpo .servicios__item .item__descripcion {
-      padding-bottom: 30px; }
+      padding-bottom: 15px; }
 
 @media screen and (max-width: 800px) {
   .servicios__cuerpo {
@@ -686,7 +728,7 @@ font-style: italic !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto; }
+    margin: 40px 0px; }
     .servicios__cuerpo .servicios__item {
       margin: auto;
       width: 100%; }
@@ -702,7 +744,7 @@ font-style: italic !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto; }
+    margin: 30px 0px; }
     .servicios__cuerpo .servicios__item {
       margin: auto;
       width: 100%; }
@@ -712,15 +754,12 @@ font-style: italic !important;
         font-size: 12px; } }
 
 #ubicacionycontacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 10vh 6.4vw 10vh 6.4vw; }
   #ubicacionycontacto .uyc__box__ubicacion {
     display: block;
     width: 500px;
     text-align: left;
-    border-left: 2px solid;
+    border-left: 0.5px solid;
     border-color: #7F7A6C;
     padding-left: 30px; }
   #ubicacionycontacto .uyc__box__contacto {
@@ -756,6 +795,11 @@ font-style: italic !important;
     margin-bottom: 8px;
     font-size: 12px; }
   #ubicacionycontacto .form__enviar {
-    font-size: 12px; }
+    font-size: 16px;
+    padding: 5px; }
   #ubicacionycontacto .uyc__img__ubicacion {
     width: 500px; }
+
+@media screen and (max-width: 1152px) {
+  .uyc__titulo--gap {
+    margin-top: 30px; } }

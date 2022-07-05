@@ -1,16 +1,12 @@
 
 #ubicacionycontacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 10vh 6.4vw 10vh 6.4vw;
-
 
     .uyc__box__ubicacion {
         display: block;
         width: 500px;
         text-align: left;
-        border-left: 2px solid;
+        border-left: 0.5px solid;
         border-color: #7F7A6C;
         padding-left: $ancho1*3;
     }
@@ -61,7 +57,8 @@
     }
 
     .form__enviar {
-        font-size: 12px;
+        font-size: 16px;
+        padding: 5px;
     }
 
     .uyc__img__ubicacion {
@@ -69,3 +66,10 @@
     }
 }
 
+@media screen and (max-width: 1152px) {
+
+    .uyc__titulo--gap {
+        margin-top: 30px;
+    }
+
+}
