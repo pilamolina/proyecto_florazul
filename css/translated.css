@@ -17,48 +17,98 @@ figure {
 /*partials*/
 /* css del main menu común a todas las páginas */
 .header {
-  background-color: white;
+  background-color: #f7f4f3;
   font-family: 'Roboto', sans-serif;
   opacity: 0.9;
   width: 100%;
   z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid;
   border-color: #7F7A6C;
   padding: 0px 6.4vw; }
-  .header .menu {
-    list-style: none;
-    display: flex;
-    gap: 35px; }
-    .header .menu .menu__lista :hover {
-      border-bottom: 0.5px solid;
-      border-color: #7F7A6C; }
-    .header .menu .menu__lista a {
-      color: black;
-      font-size: 13px;
-      text-decoration: none;
-      padding: 4px 0px; }
-    .header .menu .menu__lista--underlined {
-      border-bottom: 0.5px solid;
-      border-color: #7F7A6C; }
+  .header .navbar-toggler {
+    background-color: #f7f4f3; }
+  .header .navbar {
+    background-color: #f7f4f3 !important; }
+    .header .navbar #navbarNav {
+      align-items: flex-end; }
+      .header .navbar #navbarNav .navbar-nav {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: flex-end;
+        background-color: #f7f4f3; }
+        .header .navbar #navbarNav .navbar-nav .nav-link {
+          color: #333333;
+          font-size: 13px;
+          text-decoration: none;
+          padding: 2px 0px;
+          margin: 0px 6px;
+          background-color: #f7f4f3; }
+          .header .navbar #navbarNav .navbar-nav .nav-link:hover {
+            border-bottom: 0.5px solid;
+            border-color: #7F7A6C; }
+        .header .navbar #navbarNav .navbar-nav .nav-link-selected {
+          border-bottom: 0.5px solid;
+          border-color: #7F7A6C; }
+
+/*
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        justify-content: space-between;
+        flex-basis: auto;
+    }
+} */
+/*
+    .menu {
+        list-style: none;
+        display: flex;
+        gap:35px;
+
+        .menu__lista {
+            :hover{
+                border-bottom: 0.5px solid;
+                border-color: #7F7A6C;
+            }
+
+            a {
+                color: black;
+                font-size: 13px;
+                text-decoration: none;
+                padding: 4px 0px;
+              
+            }
+        }  
+
+        .menu__lista--underlined {
+            border-bottom: 0.5px solid;
+            border-color: #7F7A6C;
+        }
+    }
+}
 
 @media screen and (max-width: 815px) {
-  .header {
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 10px; }
-    .header .menu {
-      gap: 15px; } }
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    
+        .menu {
+            gap:15px;
+        }
+    }
+    
+}
 
 @media screen and (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 10px; } }
-
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+} 
+*/
 /* secciones de intro para todas las páginas*/
 .intro__titulo {
   letter-spacing: +0.04em;
@@ -294,6 +344,8 @@ figure {
       letter-spacing: +0.01em !important;
       margin-bottom: 20px;
       margin-top: 20px; }
+    .cabaña__cards .card .cabaña__desc {
+      color: #7f7a6c !important; }
 
 /*
 font-style: italic !important;

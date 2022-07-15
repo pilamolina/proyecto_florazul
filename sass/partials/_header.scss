@@ -1,18 +1,69 @@
 /* css del main menu común a todas las páginas */
 
 .header {
-    background-color: white;
+    background-color: #f7f4f3 ;
     font-family: 'Roboto', sans-serif;
     opacity: 0.9;
     width: 100%;
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid;
     border-color: #7F7A6C;
     padding: 0px 6.4vw;
 
+    .navbar-toggler {
+        background-color: #f7f4f3;
+    }
+
+    .navbar {
+        
+        background-color: #f7f4f3 !important;
+        
+        #navbarNav {
+            align-items: flex-end;
+
+        .navbar-nav {
+            display: flex;
+            list-style-type:none;
+            gap: 20px;
+            align-items: flex-end;
+            background-color: #f7f4f3;
+            
+            
+            .nav-link {
+                color: #333333;
+                font-size: 13px;
+                text-decoration: none;
+                padding: 2px 0px;
+                margin: 0px 6px;
+                background-color: #f7f4f3 ;
+
+                &:hover {
+                    border-bottom: 0.5px solid;
+                    border-color: #7F7A6C;
+                }
+
+            }
+
+            .nav-link-selected {
+                border-bottom: 0.5px solid;
+                border-color: #7F7A6C;
+            }
+
+        }
+        }
+    }
+}
+ /*
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        justify-content: space-between;
+        flex-basis: auto;
+    }
+} */
+
+
+    /*
     .menu {
         list-style: none;
         display: flex;
@@ -60,4 +111,5 @@
         gap: 10px;
         padding-bottom: 10px;
     }
-}
+} 
+*/

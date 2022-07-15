@@ -6,12 +6,12 @@
     margin-top: $ancho1*6;
     margin-bottom: $ancho1*6;
     padding: 0px !important;
-    align-items: center;
+    align-items: center;    
 
     .card {
         border:none !important;
-        padding-top: $ancho1*3;
-
+        padding-top: $ancho1*3;   
+        
         .cabaña__titulo {
             font-family: $title2-font !important;
             font-weight: $title2-font-weight !important;
@@ -21,6 +21,11 @@
             margin-bottom: $ancho1*2;
             margin-top: $ancho1*2;
         }
+
+        .cabaña__desc {
+            color: $title2-color !important;
+        }
+
     }
 }
 
