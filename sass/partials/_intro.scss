@@ -1,14 +1,33 @@
 
-/* secciones de intro para todas las páginas*/
+.intro__imagen .img {
+        opacity: 0.4;
+}
 
-.intro__titulo {
-    letter-spacing: +0.04em;
-    font-size: 22px;
+.intro {
+   
     margin: 0vh 0vw 5vh 0vw;
     padding: 20vh 8vw; 
     text-align: center;
-    background-color: #F7F4F3;
+    background-color: #EFE9E6;
     opacity: 0.8; 
+
+    .intro__titulo {
+        letter-spacing: +0.04em;
+        font-size: 22px;
+        text-align: center;
+        background-color: #EFE9E6;
+        color: $title2-color; 
+        opacity: 0.8; 
+    }
+
+    .intro__titulo2 {
+        font-family: $title2-font;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: $title2-font-size;
+        color: $title2-color;
+        letter-spacing: +0.05em;
+    }
 }
 
 #intro__servicios {
@@ -34,7 +53,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
     #intro__cabañas {
         background-attachment: local;
         height: 50vh;
