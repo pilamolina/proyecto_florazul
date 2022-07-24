@@ -56,9 +56,17 @@
         font-size: map-get($styleform,size);
     }
 
-    .form__enviar {
-        font-size: 16px;
-        padding: 5px;
+    .form__input--black {
+        color: #333333;
+    }
+    
+    .form__input--font {
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+    
+    .form__input--padding {
+        padding: 4px 2vw 4px 2vw;
     }
 
     .uyc__img__ubicacion {
