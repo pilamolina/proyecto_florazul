@@ -6,6 +6,10 @@ let cabaña;
 let buscarDisponibilidad;
 
 
+function reserva (primerafecha,segundafecha){
+    alert ("Estamos buscando disponibilidad para las fechas entre "+primerafecha+" y "+segundafecha);
+}
+
 while (buscarDisponibilidad!== "N") {
     buscarDisponibilidad = prompt ("¿Desea buscar disponibilidad en Flor Azul? (S/N)");
     console.log (buscarDisponibilidad);
@@ -28,7 +32,7 @@ while (buscarDisponibilidad!== "N") {
             }
             else    
             {
-            alert ("Estamos buscando disponibilidad en las fechas seleccionadas");
+            reserva(fechaLlegada,fechaSalida);
             }
         }
     else if  (buscarDisponibilidad==="N") 
