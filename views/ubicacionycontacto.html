@@ -72,11 +72,12 @@
                 <div class="uyc__box__contacto col-md-5">
                     <h2 class="uyc__titulo uyc__titulo--gap">Contacto</h2>
                     <h2 class="uyc__subtitulo">Dejanos tu consulta y te responderemos a la brevedad</h2>
-                    <form class="uyc__form">
-                        <input class="form__nombre" type="text" placeholder="Nombre y Apellido">
-                        <input class="form__correo" type="email" name="" id="" placeholder="Correo electronico">
-                        <textarea class="form__mensaje" name="" id="" cols="44" rows="22" placeholder="Deje su mensaje aquí"></textarea>
+                    <form id="formularioConsulta" class="uyc__form">
+                        <input class="form__nombre" type="text" id="nombre" placeholder="Nombre y Apellido">
+                        <input class="form__correo" type="email" name="" id="correo" placeholder="Correo electronico">
+                        <textarea class="form__mensaje" name="" id="mensaje" cols="44" rows="22" placeholder="Deje su mensaje aquí"></textarea>
                         <input class="form__input--black form__input--font form__input--padding" type="submit" value="Enviar">
+                        <p>Su número de consulta es: <span id="numeroConsulta"></span>. Responderemos su consulta lo antes posible.</p>
                     </form>
                 </div>
             </div>
