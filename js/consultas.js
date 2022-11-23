@@ -19,7 +19,7 @@ if (localStorage.getItem("arrayConsulta")) {
 
 //Creo variable contadora
 
-let contador = JSON.parse(localStorage.getItem("contador"));
+let contador = JSON.parse(localStorage.getItem("contador")) || 0;
 
 //Obtengo datos del formulario 
 
@@ -30,21 +30,29 @@ formularioConsulta.addEventListener ("submit", (e) => {
     hacerConsulta ()
 })
 
+let mensajeFormulario = document.getElementById("mensajeFormulario");
+
 function hacerConsulta () {
-    const nombreyapellido = document.getElementById ("nombre").value;
-    const correo = document.getElementById ("correo").value;
-    const mensaje =  document.getElementById ("mensaje").value;
-    if ((nombreyapellido.lenth == 0) || (correo.lenth == 0) || (mensaje.lenth == 0)) {
-        alert ("Todos los campos deben estar completos");
+    const nombreyapellido = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const mensaje =  document.getElementById("mensaje").value;
+    if ((nombreyapellido.length == 0) || (correo.length == 0) || (mensaje.length == 0)) {
+        mensajeFormulario.innerHTML = `
+        Por favor complete todos los campos
+        `
      }
      else {   
-        const numeroMensaje = contador++;
-        const nuevaConsulta = new consulta (nombreyapellido,correo,mensaje,numeroMensaje);
-        arrayConsulta.push (nuevaConsulta);
+        contador++;
+        const nuevaConsulta = new consulta (nombreyapellido,correo,mensaje,contador);
+        arrayConsulta.push(nuevaConsulta);
         formulario.reset ();
-        numeroConsulta.innerHTML= `${numeroMensaje}`;   
+        /*let numeroConsulta = document.getElementById("numeroConsulta");
+        numeroConsulta.innerHTML= `${contador}`;   */
+        mensajeFormulario.innerHTML = `
+        Su número de consulta es: ${contador}. Responderemos su consulta lo antes posible.
+        `
         localStorage.setItem ("arrayConsulta", JSON.stringify(arrayConsulta));
-        localStorage.setItem ("contador", JSON.stringyfy (contador));
+        localStorage.setItem ("contador", JSON.stringify (contador));
     }
 }
 
