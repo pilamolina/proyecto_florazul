@@ -805,6 +805,10 @@ figure {
     padding: 4px 2vw 4px 2vw; }
   #ubicacionycontacto .uyc__img__ubicacion {
     width: 500px; }
+  #ubicacionycontacto .form__resultado {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #D72638; }
 
 @media screen and (max-width: 1152px) {
   .uyc__titulo--gap {

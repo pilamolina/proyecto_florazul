@@ -40,6 +40,7 @@ function hacerConsulta () {
         mensajeFormulario.innerHTML = `
         Por favor complete todos los campos
         `
+        
     }
     else {   
         contador++;
@@ -57,7 +58,7 @@ function hacerConsulta () {
                 icon: 'success',
                 title: 'Tu consulta fue enviada con éxito',
                 confirmButtonColor: '#5998C5',
-                text: 'El número de consulta es: + ${contador}'
+                text: 'El número de consulta es: ' + contador 
             })
             /*mensajeFormulario.innerHTML = `
             Su número de consulta es: ${contador}. Responderemos su consulta lo antes posible.
@@ -71,7 +72,7 @@ function hacerConsulta () {
                 icon: 'error',
                 title: 'Lo sentimos, hubo un error',
                 confirmButtonColor: '#5998C5',
-                text: 'Por favor vuelva a intentarlo mas tarde o envíe un correo con su consulta a florazulbariloche@gmail.com mientras resolvemos este inconveniente'
+                text: 'Por favor vuelva a intentarlo mas tarde o envíe un correo con su consulta a florazulbariloche@gmail.com mientras resolvemos este inconveniente con nuestra página.'
             })
         );
     }
